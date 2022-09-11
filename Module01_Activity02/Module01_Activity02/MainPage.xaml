@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:local="clr-namespace:Module01_Activity02"
+             x:Class="Module01_Activity02.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#171717" Padding="30,100,30,30" CornerRadius="0">
+            <Label Text="MODULE 1 - ACTIVITY 2" HorizontalTextAlignment="Start" TextColor="#fcc425" FontSize="29" FontAttributes="Bold"/>
+        </Frame>
+      
+        <Label Text="This is an activity in PDC60 - Xamarin Mobile Programming that makes use of x:Static Markup Extension for runtime values." FontSize="16" Padding="30,20,30,0"/>
+
+
+        <Label Text="CHECK MY OUTPUT: "  TextColor="#171717" 
+               FontAttributes="Bold" FontSize="16" Padding="30,20,0,0"/>
+
+        <StackLayout Padding="30" Margin="30,20,30,0" BackgroundColor="#fcc425">
+            <Button Text="Button 1" BackgroundColor="{x:Static local:SharedStatic.ButtonColor}" 
+                TextColor="{x:Static local:SharedStatic.ButtonTextColor}" />
+
+            <Button Text="Button 2" BackgroundColor="{x:Static local:SharedStatic.ButtonColor}" 
+                TextColor="{x:Static local:SharedStatic.ButtonTextColor}" />
+
+            <Button Text="Button 3" BackgroundColor="{x:Static local:SharedStatic.ButtonColor}" 
+                TextColor="{x:Static local:SharedStatic.ButtonTextColor}" />
+
+            <Button Text="Button 4" BackgroundColor="{x:Static local:SharedStatic.ButtonColor}" 
+                TextColor="{x:Static local:SharedStatic.ButtonTextColor}" />
+        </StackLayout>
+        
+       
+
+    </StackLayout>
+
+</ContentPage>
